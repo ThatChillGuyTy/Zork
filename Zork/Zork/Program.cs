@@ -6,6 +6,7 @@ namespace Zork
     {
         static void Main(string[] args)
         {
+           
             Console.WriteLine("Welcome to Zork!");
             Commands command = Commands.UNKNOWN;
             while (command !=Commands.QUIT)
@@ -16,19 +17,34 @@ namespace Zork
                 string outputString;
                 switch (command)
                 {
-                    case Commands.LOOK:
-                        Console.WriteLine("This is an open field west of a white house, with a boarded front door.A rubber mat saying 'Welcome to Zork!' lies by the door.");
+                    case Commands.QUIT:
+                        outputString = "Thank you for playing!";
                         break;
+                    case Commands.LOOK:
+                        outputString = "This is an open field west of a white house, with a boarded front door.A rubber mat saying 'Welcome to Zork!' lies by the door.";
+                        break;
+
+                    case Commands.NORTH:
+                    case Commands.SOUTH:
+                    case Commands.EAST:
+                    case Commands.WEST:
+                        outputString = $"You moved {command}.";
+                        break;
+
                     default:
-                        command = Commands.UNKNOWN;
+                        outputString = "Unknown command.";
                         break;
                 };
 
 
-                Console.WriteLine(command);
+                Console.WriteLine(outputString);
             }
+
             
         }
+
+        private static string[] Rooms = { "Forest", "West of House", "Behind House", "Clearing", "Canyon View"};
+
 
         private static Commands ToCommand(string commandString) => (Enum.TryParse<Commands>(commandString, true, out Commands result) ? result : Commands.UNKNOWN);
         
