@@ -7,45 +7,33 @@ namespace Zork
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Zork!");
-            string inputString = System.Console.ReadLine();
-            Commands command = ToCommand(inputString.Trim().ToUpper();
-            Console.WriteLine(command)
+            Commands command = Commands.UNKNOWN;
+            while (command !=Commands.QUIT)
+            {
+                Console.Write(">");
+                command = ToCommand(Console.ReadLine().Trim());
+
+                string outputString;
+                switch (command)
+                {
+                    case Commands.LOOK:
+                        Console.WriteLine("This is an open field west of a white house, with a boarded front door.A rubber mat saying 'Welcome to Zork!' lies by the door.");
+                        break;
+                    default:
+                        command = Commands.UNKNOWN;
+                        break;
+                };
+
+
+                Console.WriteLine(command);
+            }
+            
         }
 
-        private static Commands ToCommand(string commandString)
-        {
-            Commands command;
-
-            if (commandString == "QUIT")
-            {
-                command = Commands.QUIT;
-            }
-            else if (commandString == "LOOK")
-            {
-                command = Commands.LOOK;
-            }
-            else if (commandString == "NORTH")
-            {
-                command = Commands.NORTH;
-            }
-            else if (commandString == "SOUTH")
-            {
-                command = Commands.SOUTH;
-            }
-            else if (commandString == "EAST")
-            {
-                command = Commands.EAST;
-            }
-            else if (commandString == "WEST")
-            {
-                command = Commands.WEST;
-            }
-            else
-            {
-                command = Commands.UNKNOWN;
-            }
-            return command;
+        private static Commands ToCommand(string commandString) => (Enum.TryParse<Commands>(commandString, true, out Commands result) ? result : Commands.UNKNOWN);
+        
+            
         }
         
     }
-}
+
