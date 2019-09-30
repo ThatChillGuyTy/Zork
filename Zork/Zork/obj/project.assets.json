@@ -735,11 +735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj",
+      "projectUniqueName": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork.csproj",
       "projectName": "Zork",
-      "projectPath": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj",
+      "projectPath": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork.csproj",
       "packagesPath": "C:\\Users\\ty703123\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\obj\\",
+      "outputPath": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
