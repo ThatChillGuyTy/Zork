@@ -22,3 +22,5 @@ C:\Users\Ty\Documents\GitHub\Zork\Zork\Zork\obj\Debug\netcoreapp2.1\Zork.pdb
 C:\Users\Ty\Documents\GitHub\Zork\Zork\Zork\bin\Debug\netcoreapp2.1\Rooms2.txt
 C:\Users\Ty\Documents\GitHub\Zork\Zork\Zork\obj\Debug\netcoreapp2.1\Zork.csprojAssemblyReference.cache
 C:\Users\Ty\Documents\GitHub\Zork\Zork\Zork\bin\Debug\netcoreapp2.1\Zork.json
+C:\Users\ty703123\Documents\GitHub\Zork\Zork\Zork\bin\Debug\netcoreapp2.1\Rooms2.txt
+C:\Users\ty703123\Documents\GitHub\Zork\Zork\Zork\bin\Debug\netcoreapp2.1\Zork.json
