@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+=======
+﻿using System;
+>>>>>>> parent of 6e12662... 9/25
 =======
 ﻿using System;
 >>>>>>> parent of 6e12662... 9/25
@@ -12,6 +16,7 @@ namespace Zork
     class Program
     {
         static void Main(string[] args)
+<<<<<<< HEAD
         {
 <<<<<<< HEAD
             const string defaultGameFilename = "Zork.json";
@@ -36,6 +41,10 @@ namespace Zork
 
 =======
            
+=======
+        {
+           
+>>>>>>> parent of 6e12662... 9/25
             Console.WriteLine("Welcome to Zork!");
             Commands command = Commands.UNKNOWN;
             while (command !=Commands.QUIT)
@@ -64,8 +73,13 @@ namespace Zork
                         outputString = "Unknown command.";
                         break;
                 };
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> parent of 6e12662... 9/25
                 Console.WriteLine(outputString);
             }
 
@@ -80,6 +94,9 @@ namespace Zork
             
         }
         
+<<<<<<< HEAD
+>>>>>>> parent of 6e12662... 9/25
+=======
 >>>>>>> parent of 6e12662... 9/25
     }
 
