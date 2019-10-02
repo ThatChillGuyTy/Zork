@@ -1,5 +1,9 @@
 {
   "version": 1,
-  "dgSpecHash": "QYOLd9U6CPboxNhEIIx4dpOWMVNjMCU3JHwvdssoy6LGZqQ0cACHaPrcCKB8UY+UyO5CN8iS5C9trzlrVsgWtw==",
+<<<<<<< HEAD
+  "dgSpecHash": "zHalaXbgwhRfPCNjSz9EtAHBZK17q0Kvc+CcCOBfHxhYFCIyqUdg2cY1JlHpsFUoW1reQBmmvCssGB+16jWSlw==",
+=======
+  "dgSpecHash": "pcuzu8vqOxlmx7V4a83cUVDMDVkfvcqGa9vLt5y0GsvSR3WMUl3jnIXYZONjqAvxUePcORR4a7NQ8wgD7LXoIg==",
+>>>>>>> parent of 44924fc... New 11
   "success": true
 }
