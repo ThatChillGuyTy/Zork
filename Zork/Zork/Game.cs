@@ -1,8 +1,8 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace Zork
 {
@@ -33,10 +33,11 @@ namespace Zork
                 {
                     Console.WriteLine(Player.Location.Description);
                     previousRoom = Player.Location;
+                    
                 }
 
-                Console.Write("\n");
-                Commands command = ToCommand(Console.ReadLine().Trim());
+                Console.Write("\n> ");
+                 Commands command = ToCommand(Console.ReadLine().Trim());
 
                 switch (command)
                 {
@@ -60,13 +61,12 @@ namespace Zork
                         break;
 
                     default:
-                        Console.WriteLine("Unknown command.");
+                        Console.WriteLine("Unkown command.");
                         break;
-
                 }
-                
             }
         }
+
         public static Game Load(string filename)
         {
             Game game = JsonConvert.DeserializeObject<Game>(File.ReadAllText(filename));
@@ -75,8 +75,8 @@ namespace Zork
             return game;
         }
 
-        private static Commands ToCommand(string commandString) => Enum.TryParse<Commands>(commandString, true, out Commands result) ? result : Commands.UNKNOWN;
-    }
 
-   
+
+        private Commands ToCommand(string commandString) => Enum.TryParse<Commands>(commandString, true, out Commands result) ? result : Commands.UNKNOWN;
+    }
 }

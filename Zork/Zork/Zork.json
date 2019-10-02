@@ -2,7 +2,6 @@
   "World": {
     "StartingLocation": "West of House",
     "Rooms": [
-
       {
         "Name": "West of House",
         "Description": "This is an open field west of a white house, with a boarded front door.",
@@ -17,11 +16,10 @@
         "Description": "You are facing the north side of a white house. There is no door here, and all the windows are barred.",
         "Neighbors": {
           "North": "Forest 2",
-          "South": "Behind House",
+          "East": "Behind House",
           "West": "West of House"
         }
       },
-
       {
         "Name": "South of House",
         "Description": "You are facing the south side of a white house. There is no door here, and all the windows are barred.",
@@ -41,7 +39,7 @@
       },
       {
         "Name": "Forest 1",
-        "Description": "This is a forest, with tress in all directions around you.",
+        "Description": "This is a forest, with trees in all directions around you.",
         "Neighbors": {
           "South": "Forest 3",
           "East": "West of House"
@@ -49,31 +47,28 @@
       },
       {
         "Name": "Forest 2",
-        "Description": "This is a dimily lit forest, with large trees all around. One particularly large tree with some low branches stand here.",
+        "Description": "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here",
         "Neighbors": {
-          "South": "Clearing",
+          "North": "Clearing",
           "East": "Clearing"
         }
       },
       {
         "Name": "Forest 3",
-        "Description": "This is a dimily lit forest, with large trees all around. To the east there appeats to be sunlight",
+        "Description": "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight.",
         "Neighbors": {
-          "South": "South of House",
-          "West": "Clearing"
+          "North": "South of House",
+          "East": "Clearing"
         }
       },
       {
         "Name": "Clearing",
         "Description": "You are in a clearing, with a forest surrounding you on the west and south.",
         "Neighbors": {
-          "South": "Forest 2",
-          "West": "Forest 3"
+          "West": "Forest 2",
+          "South": "Forest 3"
         }
-
-
       }
     ]
   }
-     
-  }
+}

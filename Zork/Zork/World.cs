@@ -1,7 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Text;
+using Newtonsoft.Json;
 using System.Runtime.Serialization;
+using System.Linq;
 
 namespace Zork
 {
@@ -11,8 +13,7 @@ namespace Zork
 
         [JsonIgnore]
         public IReadOnlyDictionary<string, Room> RoomsByName => mRoomsByName;
-
-        public Player SpawnPlayer() => new Player(this, StartingLoctaion);
+        public Player SpawnPlayer() => new Player(this, StartingLocation);
 
         [OnDeserialized]
         private void OnDeserialized(StreamingContext context)
@@ -26,7 +27,7 @@ namespace Zork
         }
 
         [JsonProperty]
-        private string StartingLoctaion { get; set; }
+        private string StartingLocation { get; set; }
 
         private Dictionary<string, Room> mRoomsByName;
 

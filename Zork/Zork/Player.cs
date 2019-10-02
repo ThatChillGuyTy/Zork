@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
-using System.Text;
 
 namespace Zork
 {
@@ -23,7 +21,6 @@ namespace Zork
             {
                 Location = World?.RoomsByName.GetValueOrDefault(value);
             }
-            
         }
 
         public Player(World world, string startingLocation)

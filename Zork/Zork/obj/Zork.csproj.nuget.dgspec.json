@@ -1,38 +1,26 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Ty\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj": {}
+    "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ty\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj": {
+    "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ty\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj",
+        "projectUniqueName": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork.csproj",
         "projectName": "Zork",
-        "projectPath": "C:\\Users\\Ty\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj",
-        "packagesPath": "C:\\Users\\Ty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ty\\Documents\\GitHub\\Zork\\Zork\\Zork\\obj\\",
-=======
-    "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj",
-        "projectName": "Zork",
-        "projectPath": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork.csproj",
+        "projectPath": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork.csproj",
         "packagesPath": "C:\\Users\\ty703123\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\obj\\",
->>>>>>> parent of 44924fc... New 11
+        "outputPath": "C:\\Users\\ty703123\\Documents\\GitHub\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\Zork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ty\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ty703123\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -56,6 +44,7 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
